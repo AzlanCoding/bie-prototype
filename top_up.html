@@ -9,6 +9,17 @@
   <link rel="stylesheet" href="./css/index.css">
   <title>Nirvana Mobile</title>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="prerender" href="./add-card.html">
+  <link rel="prerender" href="./success.html">
+  <script type="speculationrules">
+    {
+      "prerender": [
+        {
+          "urls": ["./add-card.html", "./success.html"]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <a class="material-symbols-outlined back-btn" onclick="window.history.back()">arrow_back</a>

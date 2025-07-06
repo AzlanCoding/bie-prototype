@@ -4,7 +4,6 @@ html{
 
 @view-transition {
   navigation: auto;
-  types: slide, forwards;
 }
 .is-fullheight{
   min-height: 100dvh !important;
