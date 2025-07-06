@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_card,arrow_back,delete_forever" />
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Nirvana Mobile</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a class="material-symbols-outlined back-btn" onclick="window.history.back()">arrow_back</a>
+  <section class="hero is-primary is-fullheight">
+    <div class="hero-body small-body">
+      <div class="container has-text-centered">
+        <p class="title">Top Up</p>
+      </div>
+    </div>
+    <div class="hero-body most-body box special-bottom leftBoxBottom has-background-dark">
+      <p class="title is-4" style="margin-bottom: 0.5em;">Amount</p>
+      <div class="field" style="margin-bottom: 1em;">
+        <p class="control has-icons-left">
+          <input class="input" placeholder="Enter Amount" type="number" min="0" max="100" id="addAmt"/>
+          <span class="icon is-small is-left">
+            <span class="material-icons">attach_money</span>
+          </span>
+        </p>
+      </div>
+      <p class="title is-4" style="margin-bottom: 0.5em;">Select Payment Method</p>
+      <div class="cardSelectionContain">
+        <div class="cardSelection">
+          <span class="material-icons check">check_circle</span>
+          <svg height="40" width="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#9E1791" d="M0 0h32v32H0z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M3.118 11.416v3.416H4.82v-.571c0-.314.037-.84.082-1.166l.081-.595 1.024-.046c1.131-.052 1.526-.25 2.056-1.027.412-.606.412-1.756 0-2.361-.615-.906-.824-.977-2.989-1.024L3.118 8v3.416Zm7.415-3.286c-.142.23-2.567 6.436-2.567 6.57 0 .075.357.132.831.132h.832l.206-.524.206-.524h2.485l.134.386c.13.373.113.398-.547.77-.86.485-1.589 1.287-2.033 2.235-.301.642-.346.905-.346 2.046 0 1.179.038 1.383.37 2.031.487.952 1.384 1.851 2.297 2.3.885.436 2.366.575 3.42.322 1.421-.34 2.833-1.667 3.35-3.146.302-.867.271-2.403-.067-3.308-.254-.678-1.312-2.064-1.575-2.064-.06 0-.742.855-1.517 1.9-.774 1.045-1.442 1.898-1.484 1.895-.042-.003-.37-.386-.73-.852-.36-.465-.721-.846-.803-.846-.186 0-.837.836-.835 1.072.002.235 2.182 2.914 2.413 2.964.104.023.502-.39.916-.95l1.477-2 .746-1.01.165.388c.298.697.22 2.018-.162 2.785-1.315 2.639-4.976 2.626-6.377-.022-.405-.764-.405-2.284 0-3.048a4.026 4.026 0 0 1 1.655-1.652c.58-.303 1.92-.387 2.841-.18.436.1.486.076.786-.364.208-.305.425-.471.616-.472.286 0 .294-.038.294-1.356v-1.354l1.162-2.02 1.161-2.018-.863-.09c-.478-.05-.927-.037-1.007.03-.079.066-.376.62-.659 1.231-.283.612-.545 1.114-.583 1.117-.037.003-.332-.54-.655-1.207L15.5 8.084l-.95-.038c-.523-.021-.95-.006-.95.034s.5.967 1.113 2.058l1.114 1.985v2.311l-.622-.078c-.342-.043-.677-.153-.743-.244-.066-.09-.627-1.484-1.247-3.096l-1.127-2.932-.74-.039c-.406-.021-.773.017-.815.085ZM6.451 9.751c.469.669.033 1.281-.91 1.281h-.589V9.46H5.6c.52 0 .688.057.851.291Zm5.227 1.58L12 12.342h-.721c-.522 0-.704-.046-.66-.164.033-.09.192-.566.354-1.057.163-.49.315-.873.34-.848.024.024.188.5.365 1.056v.002Zm-8.621 6.672c-.05 1.174-.07 2.695-.047 3.38l.042 1.244.82.04.818.038v-2.037c0-1.12.044-2.036.098-2.033.054.002.632.9 1.284 1.998l1.185 1.994H9.08l.035-3.374.035-3.374H7.442l-.03 1.278c-.015.702-.03 1.528-.032 1.834-.002.307-.034.557-.072.557-.037 0-.57-.81-1.184-1.802l-1.117-1.8-.93-.038-.93-.039-.09 2.134Zm16.177-1.992c0 .205 2.378 6.463 2.529 6.655.086.11.37.156.8.131l.667-.039.378-.954c.208-.525.414-.918.458-.874.045.044.231.473.414.954l.333.874.726.039.727.038 1.258-3.056c.693-1.68 1.32-3.216 1.395-3.412l.135-.357h-1.906l-.176.492c-.92 2.575-1.36 3.69-1.44 3.641-.052-.032-.202-.412-.333-.844l-.238-.786.42-1.2c.23-.66.4-1.219.378-1.241-.038-.038-1.448-.096-1.746-.072-.074.005-.428.953-.786 2.105-.359 1.153-.686 2.096-.728 2.097-.042 0-.359-.898-.704-1.997-.346-1.099-.687-2.072-.76-2.162-.158-.198-1.801-.228-1.801-.032Z" fill="#fff"></path></svg>
+          <div class="data">PayNow</div>
+        </div>
+        <div class="cardSelection">
+          <span class="material-icons check hidden">check_circle</span>
+          <svg height="40" width="40" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#F5F6F8" d="M0 .098h32v32H0z"></path><path d="M12.71 18.392a.783.783 0 0 1-.36.081.786.786 0 0 1-.694-.407l-.055-.108-2.192-4.666a.338.338 0 0 1-.027-.163.366.366 0 0 1 .11-.271.384.384 0 0 1 .278-.109.45.45 0 0 1 .25.082l2.58 1.79c.2.12.43.185.665.19.143 0 .284-.028.416-.081l12.096-5.263c-2.193-2.523-5.771-4.15-9.793-4.15C9.354 5.316 4 9.683 4 15.081c0 2.93 1.609 5.589 4.133 7.38a.698.698 0 0 1 .278.869c-.194.732-.527 1.927-.527 1.98a.956.956 0 0 0-.055.298.366.366 0 0 0 .11.27.387.387 0 0 0 .277.109.319.319 0 0 0 .222-.081l2.608-1.493c.192-.116.412-.181.638-.19.122.005.243.023.36.054 1.27.363 2.588.546 3.912.544 6.602 0 11.983-4.368 11.983-9.766a8.44 8.44 0 0 0-1.359-4.53l-13.786 7.812-.084.054Z" fill="#1AAD19"></path></svg>
+          <div class="data">WeChat Pay</div>
+        </div>
+        <div class="cardSelection">
+          <span class="material-icons check hidden">check_circle</span>
+          <svg height="40" width="40" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h32v32H0z" fill="#000"></path><g fill-rule="nonzero"><path d="M13.02 10.505h5.923v10.857H13.02z" fill="#ff5f00"></path><path d="M13.396 15.935a6.944 6.944 0 0 1 2.585-5.43c-2.775-2.224-6.76-1.9-9.156.745s-2.395 6.723 0 9.368 6.38 2.969 9.156.744a6.944 6.944 0 0 1-2.585-5.427z" fill="#eb001b"></path><path d="M26.934 15.935c0 2.643-1.48 5.054-3.81 6.21s-5.105.851-7.143-.783a6.955 6.955 0 0 0 2.587-5.428c0-2.118-.954-4.12-2.587-5.429 2.038-1.633 4.81-1.937 7.142-.782s3.811 3.566 3.811 6.21z" fill="#f79e1b"></path></g></g></svg>
+          <div class="data">**** **** **** 1234</div>
+          <a class="material-symbols-outlined del-icon">delete_forever</a>
+        </div>
+        <a class="cardSelection placeholder" href="./add-card.html">
+          <span class="material-symbols-outlined">add_card</span>
+          <p>Add Card</p>
+        </a>
+      </div>
+      <button id="addBtn" class="button is-primary is-large" disabled>Add $0.00</button>
+    </div>
+  </section>
+  <script>
+    $(()=>{
+      $('div.cardSelection').on('click', (event)=>{
+        if (!event.target.classList.contains('del-icon')){
+          $('div.cardSelection .check').addClass('hidden')
+          $(event.currentTarget).children('.check').removeClass('hidden')
+        }
+      })
+      $('#addAmt').on('input', ()=>{
+        const val = $('#addAmt').val();
+        if (val.trim() != '' && Number(val) > 0){
+          $('#addBtn').attr('disabled', false);
+          $('#addBtn').text(`Add $${Number(val).toFixed(2)}`);
+        }
+        else{
+          $('#addBtn').attr('disabled', true);
+          $('#addBtn').text('Add $0.00');
+        }
+      })
+      $('#addBtn').on('click', ()=>{
+        $('#addBtn').addClass('is-loading');
+        setTimeout(() => {
+          window.location.href = `./success.html?amt=${Number($('#addAmt').val()).toFixed(2)}`
+        }, 1500);
+      })
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back,credit_card,credit_card_clock,lock" />
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Nirvana Mobile</title>
+</head>
+<body>
+  <a class="material-symbols-outlined back-btn" onclick="window.history.back()">arrow_back</a>
+  <section class="hero is-primary is-fullheight">
+    <div class="hero-body small-body">
+      <div class="container has-text-centered">
+        <p class="title">Add Card</p>
+      </div>
+    </div>
+    <div class="hero-body most-body box special-bottom leftBoxBottom has-background-dark">
+      <div class="cardSelectionContain">
+        <p class="title is-4" style="margin-bottom: 0.5em; text-align: center;">Card Details</p>
+        <div class="field">
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="number" placeholder="Card Number">
+                <span class="icon is-small is-left">
+                  <span class="material-symbols-outlined">credit_card</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="field-body is-row-field">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="Expiry Date">
+                <span class="icon is-small is-left">
+                  <span class="material-symbols-outlined">credit_card_clock</span>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="number" placeholder="Security Code">
+                <span class="icon is-small is-left">
+                  <span class="material-symbols-outlined">lock</span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="button is-primary is-large" href="./top_up.html">Add Card</a>
+    </div>
+  </section>
+</body>
+</html>

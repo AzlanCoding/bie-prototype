@@ -1,0 +1,16 @@
+{
+  "name": "bie-prototype",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel *.html",
+    "build": "parcel build *.html --dist-dir dist --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}

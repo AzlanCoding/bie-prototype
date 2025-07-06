@@ -1,0 +1,221 @@
+html{
+  overflow-y: auto;
+}
+
+@view-transition {
+  navigation: auto;
+  types: slide, forwards;
+}
+.is-fullheight{
+  min-height: 100dvh !important;
+}
+
+.small-body{
+  padding: 3em;
+  height: 20%;
+  flex: 0;
+}
+.half-body{
+  padding: 0;
+  height: 40%;
+}
+.most-body{
+  padding: 0;
+  height: 80%;
+}
+.placehold-section{
+  height: 20%;
+}
+
+.special-bottom{
+  border-radius: 60px 60px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2em 0.5em;
+}
+.special-bottom p, .special-bottom span{
+  color: #fff;
+}
+
+.fingerprint-contain{
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 3em 3em 5em 3em; */
+}
+.fingerprint-contain::after{
+  margin-top: 8px;
+  content: "Use Fingerprint to Log In";
+}
+
+.fingerprint-btn{
+  display: flex;
+  border-radius: 50%;
+  border: #fff 1px solid;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+}
+
+.fingerprint-btn span{
+  margin: auto;
+  font-size: 75px;
+}
+
+
+
+.home-body{
+  /* height: 40%; */
+  align-items: flex-start!important;
+  flex-grow: 0!important;
+}
+
+.home-body-lower{
+  /* height: 60%; */
+  flex: 1;
+  padding: 1.25em 1em;
+}
+
+
+.statsRow{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  /* justify-content: stretch; */
+  /* align-items: stretch; */
+}
+
+.statsContain, .statsContain2{
+  border: #fff 1px solid;
+  border-radius: 1em;
+  flex: 1;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.statsContain span{
+  font-size: 60px;
+}
+
+.statsContain2 span{
+  font-size: 30px;
+}
+.statsContain .data, .statsContain2 .data{
+  width: 50%;
+  display: inline-block;
+  flex: 1;
+}
+.statsContain2 .data{
+  flex: 1;
+  text-align: center;
+}
+
+
+.accBalContain{
+  display: flex;
+  flex-direction: row;
+  border: #fff 1px solid;
+  border-radius: 1em;
+  padding: 8px;
+  width: 100%;
+  gap: 8px;
+}
+
+.accBalContain .data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.accBalContain span{
+  font-size: 60px;
+}
+
+.accBalContain .topUpBtnContain{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.leftBoxBottom{
+  align-items: flex-start !important;
+  padding: 2em 1em 1em 1em;
+}
+.leftBoxBottom .field, .leftBoxBottom .button{
+  width: 100%;
+}
+.cardSelectionContain{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+  gap: 0.5em;
+}
+.cardSelection{
+  display: flex;
+  flex-direction: row;
+  border: #fff solid 1px;
+  border-radius: 10px;
+  padding: 8px;
+  align-items: center;
+  gap: 8px;
+}
+.cardSelection .check{
+  color: lightblue;
+  font-size: 1em;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.cardSelection .check.hidden{
+  opacity: 0;
+}
+.cardSelection .data{
+  flex: 1;
+  color: #fff;
+}
+.cardSelection .del-icon{
+  color: red;
+}
+.cardSelection.placeholder{
+  border: #fff 1px dashed;
+  justify-content: center;
+}
+.cardSelection svg{
+  border-radius: 10px;
+}
+
+.is-row-field{
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  gap: 8px;
+}
+
+.back-btn{
+  color: #2e333d;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+.logout-btn{
+  color: #2e333d;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.material-symbols-outlined, .material-icons{
+  user-select: none;
+}
