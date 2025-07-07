@@ -72,6 +72,9 @@
           $('div.cardSelection .check').addClass('hidden')
           $(event.currentTarget).children('.check').removeClass('hidden')
         }
+        else{
+          $(event.currentTarget).remove()
+        }
       })
       $('#addAmt').on('input', ()=>{
         const val = $('#addAmt').val();

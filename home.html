@@ -50,7 +50,7 @@
       <div class="accBalContain" style="margin-bottom: 1.5rem;">
         <span class="material-symbols-outlined">account_balance</span>
         <div class="data">
-          <p class="title is-4">$17</p>
+          <p class="title is-4" id="amt">$17</p>
           <p class="subtitle is-7">$10 will be deducted on 14th July 2025</p>
         </div>
         <div class="topUpBtnContain">
@@ -116,5 +116,10 @@
       </div>
     </div>
   </section>
+  <script>
+    if (window.localStorage.getItem('amt')){
+      document.getElementById('amt').innerText = `$${Number(window.localStorage.getItem('amt'))+17}`
+    }
+  </script>
 </body>
 </html>

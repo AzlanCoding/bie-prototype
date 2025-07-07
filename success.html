@@ -33,6 +33,7 @@
   <script>
     const amt = (new URLSearchParams(window.location.search)).get('amt')
     if (amt){
+      window.localStorage.setItem('amt', (window.localStorage.getItem('amt') ? Number(window.localStorage.getItem('amt')) : 0) + Number(amt));
       document.getElementById('msg').innerText = `Successfuly Added $${amt} to Account`
     }
   </script>
